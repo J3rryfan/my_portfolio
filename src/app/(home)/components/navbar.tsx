@@ -1,9 +1,10 @@
+import { cn } from '@/lib/utils';
 import { Github, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 
-export default function Navbar() {
+export default function Navbar({ className }: { className?: string }) {
   const socials = [
     {
       Link: 'https://www.linkedin.com/in/jerryfaan/',
@@ -18,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className=' py-10 flex items-center justify-between'>
+    <nav className={cn(' py-10 flex items-center justify-between', className)}>
       <h1 className=' text-2xl font-bold underline underline-offset-8 decoration-green-600 -rotate-2'>
         Jerry Fan
       </h1>
