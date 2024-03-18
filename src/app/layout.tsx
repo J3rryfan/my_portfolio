@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const SpaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000/'),
+  metadataBase: new URL('https://jerryfan.vercel.app/'),
 
   title: "Jerry Fan's Portfolio",
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Jerry Fan's Portfolio",
     description:
       "Based in Vancouver, BC. I'm a Fullstack Developer passionate about building a modern web application that users love.",
-    url: 'http://localhost:3000/',
+    url: 'https://jerryfan.vercel.app/',
     siteName: "Jerry Fan's Portfolio",
     images: '/project-profile-1.png',
     type: 'website',
