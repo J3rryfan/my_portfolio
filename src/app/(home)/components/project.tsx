@@ -23,16 +23,8 @@ const projects = [
     title: 'Discord Clone',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://github.com/J3rryfan/discord-clone',
-    cover: '/project-profile-1.png',
+    cover: '/Busy_Bites_Cover.jpeg',
     background: 'bg-green-500',
-  },
-
-  {
-    title: 'TradeSqaure',
-    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-    Link: 'http://localhost:3000',
-    cover: '/project-profile-2.png',
-    background: 'bg-indigo-500',
   },
 
   {
@@ -88,10 +80,10 @@ export default function Project() {
         {projects.map((project, index) => {
           return (
             <Link href={project.Link} key={index}>
-              <div className={cn('p-5 rounded-md', project.background)}>
+              <div className={cn('p-5 rounded-xl', project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
-                  className='w-full space-y-5 cursor-pointer'
+                  className='w-full space-y-5 cursor-pointer rounded-xl '
                 >
                   <div className='space-y-5'>
                     <h1 className='text-2xl font-bold'>{project.title}</h1>

@@ -30,7 +30,6 @@ export const DirectionAwareHover = ({
     if (!ref.current) return;
 
     const direction = getDirection(event, ref.current);
-    console.log('direction', direction);
     switch (direction) {
       case 0:
         setDirection('top');
@@ -92,9 +91,10 @@ export const DirectionAwareHover = ({
                 'h-full w-full object-cover scale-[1.15]',
                 imageClassName
               )}
-              width='1000'
-              height='1000'
+              width='2000'
+              height='2000'
               src={imageUrl}
+              objectFit='cover'
             />
           </motion.div>
           <motion.div
