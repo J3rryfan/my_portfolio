@@ -19,7 +19,12 @@ export default function Navbar({ className }: { className?: string }) {
   ];
 
   return (
-    <nav className={cn(' py-10 flex items-center justify-between', className)}>
+    <nav
+      className={cn(
+        ' py-10 flex items-center justify-between animate-move-down',
+        className
+      )}
+    >
       <h1 className=' text-2xl font-bold underline underline-offset-8 decoration-green-600 -rotate-2'>
         Jerry Fan
       </h1>
