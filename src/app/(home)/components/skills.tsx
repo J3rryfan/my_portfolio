@@ -4,9 +4,17 @@ import { HoverEffect } from '@/components/ui/card-hover-effect';
 import Title from './title';
 import {
   SiNextdotjs,
+  SiPhp,
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiLaravel,
+  SiMysql,
+  SiPostgresql,
+  SiFigma,
+  SiGithub,
+  SiCsharp,
+  SiDotnet,
 } from 'react-icons/si';
 
 export default function Skills() {
@@ -28,12 +36,36 @@ export default function Skills() {
       Icon: SiNextdotjs,
     },
     {
-      text: 'Tailwindcss',
-      Icon: SiTailwindcss,
+      text: 'C#',
+      Icon: SiCsharp,
     },
     {
-      text: 'Tailwindcss',
-      Icon: SiTailwindcss,
+      text: '.NET',
+      Icon: SiDotnet,
+    },
+    {
+      text: 'PHP',
+      Icon: SiPhp,
+    },
+    {
+      text: 'Laravel',
+      Icon: SiLaravel,
+    },
+    {
+      text: 'MySQL',
+      Icon: SiMysql,
+    },
+    {
+      text: 'PostgreSQL',
+      Icon: SiPostgresql,
+    },
+    {
+      text: 'Figma',
+      Icon: SiFigma,
+    },
+    {
+      text: 'Github',
+      Icon: SiGithub,
     },
   ];
 
