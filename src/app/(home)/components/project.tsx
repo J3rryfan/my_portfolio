@@ -14,15 +14,15 @@ const projects = [
   {
     title: 'Pictok',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
-    Link: 'http://localhost:3000',
-    cover: '/project-profile-1.png',
+    Link: 'https://pictok.vercel.app/',
+    cover: '/Pictok2.jpeg',
     background: 'bg-indigo-500',
   },
 
   {
     title: 'Discord Clone',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
-    Link: 'http://localhost:3000',
+    Link: 'https://github.com/J3rryfan/discord-clone',
     cover: '/project-profile-1.png',
     background: 'bg-green-500',
   },
@@ -32,6 +32,14 @@ const projects = [
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
     Link: 'http://localhost:3000',
     cover: '/project-profile-2.png',
+    background: 'bg-indigo-500',
+  },
+
+  {
+    title: 'BusyBites',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
+    Link: 'https://busy-bites.vercel.app/',
+    cover: '/Busy_Bites_Cover.jpeg',
     background: 'bg-indigo-500',
   },
 
@@ -49,6 +57,22 @@ const projects = [
     Link: 'http://localhost:3000',
     cover: '/project-profile-2.png',
     background: 'bg-green-500',
+  },
+
+  {
+    title: 'Apple Website',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    Link: 'http://localhost:3000',
+    cover: '/project-profile-2.png',
+    background: 'bg-green-500',
+  },
+
+  {
+    title: 'Email Guard',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    Link: 'http://localhost:3000',
+    cover: '/project-profile-2.png',
+    background: 'bg-indigo-500',
   },
 ];
 
