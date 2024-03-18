@@ -9,12 +9,12 @@ export default function HeroSection() {
         <h1 className=' text-4xl lg:text-7xl font-bold'>
           Nice to Meet you 👋 <br />{' '}
           <span className='underline underline-offset-8 decoration-green-600 '>
-            I'm Jerry.
+            I&apos;m Jerry.
           </span>
         </h1>
         <p className='md:w-96 text-lg text-gray-300'>
-          Based in Vancouver, BC. I'm a Fullstack Developer passionate about
-          building a modern web application that users love.
+          Based in Vancouver, BC. I&apos;m a Fullstack Developer passionate
+          about building a modern web application that users love.
         </p>
 
         <Link
