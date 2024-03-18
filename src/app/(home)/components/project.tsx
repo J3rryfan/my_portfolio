@@ -1,4 +1,5 @@
 import {
+  SiFigma,
   SiNextdotjs,
   SiReact,
   SiTailwindcss,
@@ -9,24 +10,49 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
-export default function Project() {
-  const projects = [
-    {
-      title: 'Project 1',
-      tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-      Link: 'http://localhost:3000',
-      cover: '/project-profile-1.png',
-      background: 'bg-indigo-500',
-    },
+const projects = [
+  {
+    title: 'Pictok',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
+    Link: 'http://localhost:3000',
+    cover: '/project-profile-1.png',
+    background: 'bg-indigo-500',
+  },
 
-    {
-      title: 'Project 2',
-      tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-      Link: 'http://localhost:3000',
-      cover: '/project-profile-2.png',
-      background: 'bg-green-500',
-    },
-  ];
+  {
+    title: 'Discord Clone',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
+    Link: 'http://localhost:3000',
+    cover: '/project-profile-1.png',
+    background: 'bg-green-500',
+  },
+
+  {
+    title: 'TradeSqaure',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    Link: 'http://localhost:3000',
+    cover: '/project-profile-2.png',
+    background: 'bg-indigo-500',
+  },
+
+  {
+    title: 'kotion',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    Link: 'http://localhost:3000',
+    cover: '/project-profile-2.png',
+    background: 'bg-green-500',
+  },
+
+  {
+    title: 'WishList',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    Link: 'http://localhost:3000',
+    cover: '/project-profile-2.png',
+    background: 'bg-green-500',
+  },
+];
+
+export default function Project() {
   return (
     <div className=' py-10 p-5 sm:p-0'>
       <Title
