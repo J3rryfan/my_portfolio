@@ -1,6 +1,4 @@
 import { cn } from '@/lib/utils';
-import { Github, Menu, X } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 
@@ -16,6 +14,10 @@ export default function Navbar({ className }: { className?: string }) {
       Label: 'Github',
       Icon: SiGithub,
     },
+    // {
+    //   Link: '',
+    //   Label: 'Resume',
+    // },
   ];
 
   return (
