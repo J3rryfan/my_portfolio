@@ -27,7 +27,7 @@ export default function Navbar({ className }: { className?: string }) {
         {socials.map((social, index) => {
           const Icon = social.Icon;
           return (
-            <Link href={social.Link} key={index} aria-Label={social.Label}>
+            <Link href={social.Link} key={index} aria-label={social.Label}>
               <Icon className='w-5 h-5 hover:scale-125 transition-all' />
             </Link>
           );
