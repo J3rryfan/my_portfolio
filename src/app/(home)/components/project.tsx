@@ -44,27 +44,19 @@ const projects = [
   },
 
   {
+    title: 'Email Guard',
+    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    Link: 'http://localhost:3000',
+    cover: '/emailGuard.jpeg',
+    background: 'bg-indigo-500',
+  },
+
+  {
     title: 'WishList',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
     Link: 'http://localhost:3000',
     cover: '/project-profile-2.png',
     background: 'bg-green-500',
-  },
-
-  {
-    title: 'Apple Website',
-    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-    Link: 'http://localhost:3000',
-    cover: '/appleWebsite.jpeg',
-    background: 'bg-green-500',
-  },
-
-  {
-    title: 'Email Guard',
-    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-    Link: 'http://localhost:3000',
-    cover: '/project-profile-2.png',
-    background: 'bg-indigo-500',
   },
 ];
 
