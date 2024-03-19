@@ -15,7 +15,7 @@ const projects = [
     title: 'Pictok',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://pictok.vercel.app/',
-    cover: '/Pictok2.jpeg',
+    cover: '/pictokCover.webp',
     background: 'bg-indigo-500',
   },
 
