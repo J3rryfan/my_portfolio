@@ -34,7 +34,7 @@ export default function AuroraHero({
   return (
     <div>
       {children}
-      <div className='absolute inset-0 z-0'>
+      <div className='absolute inset-0 z-0 animate-move-down'>
         <Canvas>
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
         </Canvas>
