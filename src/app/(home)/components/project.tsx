@@ -55,7 +55,7 @@ const projects = [
     title: 'Apple Website',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
     Link: 'http://localhost:3000',
-    cover: '/project-profile-2.png',
+    cover: '/appleWebsite.jpeg',
     background: 'bg-green-500',
   },
 
@@ -83,7 +83,7 @@ export default function Project() {
               <div className={cn('p-5 rounded-xl', project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
-                  className='w-full space-y-5 cursor-pointer rounded-xl '
+                  className='w-full space-y-5 cursor-pointer rounded-xl'
                 >
                   <div className='space-y-5'>
                     <h1 className='text-2xl font-bold'>{project.title}</h1>

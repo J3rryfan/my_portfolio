@@ -14,10 +14,6 @@ export default function Navbar({ className }: { className?: string }) {
       Label: 'Github',
       Icon: SiGithub,
     },
-    // {
-    //   Link: '',
-    //   Label: 'Resume',
-    // },
   ];
 
   return (
