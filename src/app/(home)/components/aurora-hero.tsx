@@ -1,12 +1,12 @@
 'use client';
 
-import {
-  motion,
-  useMotionTemplate,
-  useMotionValue,
-  animate,
-} from 'framer-motion';
-import { useEffect } from 'react';
+// import {
+//   motion,
+//   useMotionTemplate,
+//   useMotionValue,
+//   animate,
+// } from 'framer-motion';
+// import { useEffect } from 'react';
 
 import { Stars } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
@@ -18,27 +18,27 @@ export default function AuroraHero({
 }: {
   children: React.ReactNode;
 }) {
-  const color = useMotionValue(COLORS[0]);
+  // const color = useMotionValue(COLORS[0]);
 
-  const backgroundImage = useMotionTemplate`radial-gradient(150% 150% at 50% 0%, #020617 50%, ${color})`;
+  // const backgroundImage = useMotionTemplate`radial-gradient(150% 150% at 50% 0%, #020617 50%, ${color})`;
 
-  useEffect(() => {
-    animate(color, COLORS, {
-      ease: 'easeInOut',
-      duration: 10,
-      repeat: Infinity,
-      repeatType: 'mirror',
-    });
-  }, []);
+  // useEffect(() => {
+  //   animate(color, COLORS, {
+  //     ease: 'easeInOut',
+  //     duration: 10,
+  //     repeat: Infinity,
+  //     repeatType: 'mirror',
+  //   });
+  // }, []);
 
   return (
     <div>
-      {children}
-      <div className='absolute inset-0 z-0 animate-move-down'>
+      <div className='absolute inset-0 z-0 animate-accordion-up'>
         <Canvas>
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
         </Canvas>
       </div>
+      {children}
     </div>
   );
 }

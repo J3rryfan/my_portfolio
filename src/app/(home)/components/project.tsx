@@ -69,27 +69,37 @@ export default function Project() {
       />
 
       <div className=' grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
-        {projects.map((project, index) => {
-          return (
-            <Link href={project.Link} key={index}>
-              <div className={cn('p-5 rounded-xl', project.background)}>
-                <DirectionAwareHover
-                  imageUrl={project.cover}
-                  className='w-full space-y-5 cursor-pointer rounded-xl'
-                >
-                  <div className='space-y-5'>
-                    <h1 className='text-2xl font-bold'>{project.title}</h1>
-                    <div className='flex items-center gap-5'>
-                      {project.tech.map((Icon, index) => {
-                        return <Icon key={index} className='w-5 h-5' />;
-                      })}
+        {projects.map((project, index) => (
+          <>
+            <div>
+              <Link href={project.Link} key={index}>
+                <div className={cn('p-5 rounded-xl', project.background)}>
+                  <DirectionAwareHover
+                    imageUrl={project.cover}
+                    className='w-full space-y-5 cursor-pointer rounded-xl'
+                  >
+                    <div className='space-y-5'>
+                      <h1 className='text-2xl font-bold'>{project.title}</h1>
+                      <div className='flex items-center gap-5'>
+                        {project.tech.map((Icon, index) => {
+                          return <Icon key={index} className='w-5 h-5' />;
+                        })}
+                      </div>
                     </div>
-                  </div>
-                </DirectionAwareHover>
+                  </DirectionAwareHover>
+                </div>
+              </Link>
+              <div>
+                <div className='flex items-center justify-center flex-1 gap-x-6 mt-2'>
+                  <Link href={project.Link}>
+                    <button>Live Demo</button>
+                  </Link>
+                  <button>Github</button>
+                </div>
               </div>
-            </Link>
-          );
-        })}
+            </div>
+          </>
+        ))}
       </div>
     </div>
   );
