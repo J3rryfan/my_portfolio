@@ -31,7 +31,7 @@ export default function Navbar({ className }: { className?: string }) {
           const Icon = social.Icon;
           return (
             <Link href={social.Link} key={index} aria-label={social.Label}>
-              <Icon className='w-5 h-5 hover:scale-125 transition-all text-white' />
+              <Icon className='w-5 h-5 hover:scale-125 transition-all text-white ' />
             </Link>
           );
         })}

@@ -18,22 +18,9 @@ export default function AuroraHero({
 }: {
   children: React.ReactNode;
 }) {
-  // const color = useMotionValue(COLORS[0]);
-
-  // const backgroundImage = useMotionTemplate`radial-gradient(150% 150% at 50% 0%, #020617 50%, ${color})`;
-
-  // useEffect(() => {
-  //   animate(color, COLORS, {
-  //     ease: 'easeInOut',
-  //     duration: 10,
-  //     repeat: Infinity,
-  //     repeatType: 'mirror',
-  //   });
-  // }, []);
-
   return (
     <div>
-      <div className='absolute inset-0 z-0 animate-accordion-up'>
+      <div className='absolute inset-0 z-0'>
         <Canvas>
           <Stars radius={50} count={2500} factor={4} fade speed={2} />
         </Canvas>
