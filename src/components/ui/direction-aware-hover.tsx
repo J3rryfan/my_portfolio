@@ -20,9 +20,7 @@ export const DirectionAwareHover = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const [direction, setDirection] = useState<
-    'top' | 'bottom' | 'left' | 'right' | string
-  >('left');
+  const [direction, setDirection] = useState<'left' | 'right' | string>('left');
 
   const handleMouseEnter = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
@@ -38,9 +36,6 @@ export const DirectionAwareHover = ({
         setDirection('right');
         break;
       case 2:
-        setDirection('bottom');
-        break;
-      case 3:
         setDirection('left');
         break;
       default:
@@ -87,14 +82,14 @@ export const DirectionAwareHover = ({
           >
             <div className=''>
               <Image
-                alt='image'
+                src={imageUrl}
+                alt={imageUrl}
                 className={cn(
-                  'h-full w-full object-cover scale-[1.15]',
+                  'h-full w-full object-cover scale-[1.10]',
                   imageClassName
                 )}
-                width='2000'
                 height='2000'
-                src={imageUrl}
+                width='2000'
               />
             </div>
           </motion.div>

@@ -27,7 +27,6 @@ const projects = [
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://github.com/J3rryfan/discord-clone',
     GithubLink: 'https://github.com/J3rryfan/discord-clone',
-
     cover: '/Busy_Bites_Cover.jpeg',
     background: 'bg-green-500',
   },
@@ -73,7 +72,7 @@ export default function Project() {
           <>
             <div>
               <Link href={project.Link} key={index}>
-                <div className={cn('p-5 rounded-xl', project.background)}>
+                <div className={cn('p-3 rounded-md', project.background)}>
                   <DirectionAwareHover
                     imageUrl={project.cover}
                     className='w-full space-y-5 cursor-pointer rounded-xl'
