@@ -6,13 +6,13 @@ export default function HeroSection() {
   return (
     <div className='min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-2 lg:flex-row items-center justify-between animate-move-up'>
       <div className=' space-y-10 text-center lg:text-left'>
-        <h1 className=' text-4xl lg:text-7xl font-bold'>
+        <h1 className=' text-4xl lg:text-7xl font-bold text-white'>
           Nice to Meet you 👋 <br />{' '}
-          <span className='underline underline-offset-8 decoration-green-600 '>
+          <span className='underline underline-offset-8 decoration-green-600 text-white'>
             I&apos;m Jerry.
           </span>
         </h1>
-        <p className='md:w-96 text-lg text-gray-300'>
+        <p className='md:w-96 text-lg text-gray-300 '>
           Based in Vancouver, BC. I&apos;m a Fullstack Developer passionate
           about building a modern web application that users love.
         </p>
