@@ -4,6 +4,7 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiVite,
 } from 'react-icons/si';
 import Title from './title';
 import Link from 'next/link';
@@ -15,6 +16,7 @@ const projects = [
     title: 'Pictok',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://pictok.vercel.app/',
+    GithubLink: 'https://github.com/pictok/web-app',
     cover: '/pictokCover.webp',
     background: 'bg-indigo-500',
   },
@@ -23,6 +25,8 @@ const projects = [
     title: 'Discord Clone',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://github.com/J3rryfan/discord-clone',
+    GithubLink: 'https://github.com/J3rryfan/discord-clone',
+
     cover: '/Busy_Bites_Cover.jpeg',
     background: 'bg-green-500',
   },
@@ -31,14 +35,16 @@ const projects = [
     title: 'BusyBites',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://busy-bites.vercel.app/',
+    GithubLink: 'https://github.com/busy-bites/busy-bites',
     cover: '/Busy_Bites_Cover.jpeg',
     background: 'bg-indigo-500',
   },
 
   {
-    title: 'kotion',
-    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    title: 'WishList',
+    tech: [SiReact, SiTailwindcss, SiVite, SiTypescript],
     Link: 'http://localhost:3000',
+    GithubLink: 'https://github.com/J3rryfan/aws-lambda-my-wishlist-app',
     cover: '/project-profile-2.png',
     background: 'bg-green-500',
   },
@@ -47,16 +53,9 @@ const projects = [
     title: 'Email Guard',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
     Link: 'http://localhost:3000',
+    GithubLink: 'https://github.com/Email-Phising-Guard/email-guard',
     cover: '/emailGuard.jpeg',
     background: 'bg-indigo-500',
-  },
-
-  {
-    title: 'WishList',
-    tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-    Link: 'http://localhost:3000',
-    cover: '/project-profile-2.png',
-    background: 'bg-green-500',
   },
 ];
 
@@ -94,7 +93,9 @@ export default function Project() {
                   <Link href={project.Link}>
                     <button>Live Demo</button>
                   </Link>
-                  <button>Github</button>
+                  <Link href={project.GithubLink}>
+                    <button>Github</button>
+                  </Link>
                 </div>
               </div>
             </div>
