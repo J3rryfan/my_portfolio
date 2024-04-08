@@ -30,12 +30,9 @@ export const DirectionAwareHover = ({
     const direction = getDirection(event, ref.current);
     switch (direction) {
       case 0:
-        setDirection('top');
-        break;
-      case 1:
         setDirection('right');
         break;
-      case 2:
+      case 1:
         setDirection('left');
         break;
       default:
