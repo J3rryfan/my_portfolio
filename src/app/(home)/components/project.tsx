@@ -10,6 +10,7 @@ import Title from './title';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
+import { Button } from '@/components/ui/button';
 
 const projects = [
   {
@@ -91,10 +92,12 @@ export default function Project() {
               <div>
                 <div className='flex items-center justify-center flex-1 gap-x-6 mt-2'>
                   <Link href={project.Link}>
-                    <button>Live Demo</button>
+                    <Button variant='secondary' className='w-full'>
+                      Live Demo
+                    </Button>
                   </Link>
                   <Link href={project.GithubLink}>
-                    <button>Github</button>
+                    <Button variant='secondary'>GitHub</Button>
                   </Link>
                 </div>
               </div>
