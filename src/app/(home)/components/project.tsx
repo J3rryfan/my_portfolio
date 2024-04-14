@@ -1,3 +1,5 @@
+"use client";
+
 import {
   SiFigma,
   SiNextdotjs,
@@ -7,10 +9,10 @@ import {
   SiVite,
 } from 'react-icons/si';
 import Title from './title';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
-import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
-import { Button } from '@/components/ui/button';
+import Image from "next/image";
+import React from "react";
+import Link from "next/link";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 const projects = [
   {
@@ -18,7 +20,7 @@ const projects = [
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://pictok.vercel.app/',
     GithubLink: 'https://github.com/pictok/web-app',
-    cover: '/pictokCover.webp',
+    cover: '/pictokCover.png',
     background: 'bg-indigo-500',
   },
 
@@ -27,7 +29,7 @@ const projects = [
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://github.com/J3rryfan/discord-clone',
     GithubLink: 'https://github.com/J3rryfan/discord-clone',
-    cover: '/Busy_Bites_Cover.jpeg',
+    cover: '/Busy_Bites_Cover.png',
     background: 'bg-green-500',
   },
 
@@ -36,7 +38,7 @@ const projects = [
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
     Link: 'https://busy-bites.vercel.app/',
     GithubLink: 'https://github.com/busy-bites/busy-bites',
-    cover: '/Busy_Bites_Cover.jpeg',
+    cover: '/Busy_Bites_Cover.png',
     background: 'bg-indigo-500',
   },
 
@@ -45,7 +47,7 @@ const projects = [
     tech: [SiReact, SiTailwindcss, SiVite, SiTypescript],
     Link: 'https://dpcgasqvo69t1.cloudfront.net/',
     GithubLink: 'https://github.com/J3rryfan/aws-lambda-my-wishlist-app',
-    cover: '/wishlist2.jpeg',
+    cover: '/wishlist.png',
     background: 'bg-green-500',
   },
 
@@ -67,7 +69,68 @@ export default function Project() {
         className=' flex flex-col items-center justify-center rotate-6 text-white'
       />
 
-      <div className=' grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
+          {projects.map((project, index) => (
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardItem
+                translateZ="50"
+                className="text-xl font-bold text-neutral-600 dark:text-white"
+              >
+                {project.title}
+              </CardItem>
+              <CardItem
+                as="p"
+                translateZ="60"
+                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              >
+                Hover over this card to unleash the power of CSS perspective
+              </CardItem>
+              <CardItem translateZ="100" className="w-full mt-4">
+                <Image
+                  src={project.cover}
+                  height="1000"
+                  width="1000"
+                  className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                  alt="thumbnail"
+                />
+              </CardItem>
+              <div className='flex items-center justify-start gap-2 mt-3'>
+              {project.tech.map((Icon, index) => {
+                      return <Icon key={index} className='w-5 h-5 text-white' />;
+                })}
+              </div>
+              <div className="flex justify-between items-center mt-20">
+                <CardItem
+                  translateZ={20}
+                  as={Link}
+                  href={project.Link}
+                  target="__blank"
+                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                >
+                  Live Demo
+                </CardItem>
+                <CardItem
+                  translateZ={20}
+                  as={Link}
+                  href={project.GithubLink}
+                  target="__blank"
+                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                >
+                  GitHub
+                </CardItem>
+              </div>
+            </CardBody>
+            </CardContainer>
+            ))}
+         </div>
+      </div>
+  );
+}
+
+
+
+ {/* <div className=' grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
         {projects.map((project, index) => (
           <>
             <div>
@@ -103,7 +166,4 @@ export default function Project() {
             </div>
           </>
         ))}
-      </div>
-    </div>
-  );
-}
+      </div> */}
