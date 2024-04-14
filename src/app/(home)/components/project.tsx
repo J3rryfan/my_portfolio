@@ -18,6 +18,7 @@ const projects = [
   {
     title: 'Pictok',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
+    description: '',
     Link: 'https://pictok.vercel.app/',
     GithubLink: 'https://github.com/pictok/web-app',
     cover: '/pictokCover.png',
@@ -27,6 +28,7 @@ const projects = [
   {
     title: 'Discord Clone',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
+    description: '',
     Link: 'https://github.com/J3rryfan/discord-clone',
     GithubLink: 'https://github.com/J3rryfan/discord-clone',
     cover: '/Busy_Bites_Cover.png',
@@ -36,6 +38,7 @@ const projects = [
   {
     title: 'BusyBites',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
+    description: '',
     Link: 'https://busy-bites.vercel.app/',
     GithubLink: 'https://github.com/busy-bites/busy-bites',
     cover: '/Busy_Bites_Cover.png',
@@ -46,6 +49,7 @@ const projects = [
     title: 'WishList',
     tech: [SiReact, SiTailwindcss, SiVite, SiTypescript],
     Link: 'https://dpcgasqvo69t1.cloudfront.net/',
+    description: 'Upload your wishlist to the cloud and never lose it again.',
     GithubLink: 'https://github.com/J3rryfan/aws-lambda-my-wishlist-app',
     cover: '/wishlist.png',
     background: 'bg-green-500',
@@ -54,6 +58,7 @@ const projects = [
   {
     title: 'Email Guard',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
+    description: '',
     Link: 'https://email-guard.vercel.app/',
     GithubLink: 'https://github.com/Email-Phising-Guard/email-guard',
     cover: '/emailGuard.jpeg',
@@ -70,7 +75,7 @@ export default function Project() {
       />
 
       <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <CardContainer className="inter-var">
               <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
@@ -84,7 +89,7 @@ export default function Project() {
                 translateZ="60"
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
-                Hover over this card to unleash the power of CSS perspective
+                {project.description}
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
