@@ -52,6 +52,9 @@ export const DirectionAwareHover = ({
     return d;
   };
 
+  const desiredHeight = 200;
+  const desiredWidth = 200;
+
   return (
     <motion.div
       onMouseEnter={handleMouseEnter}
@@ -85,8 +88,8 @@ export const DirectionAwareHover = ({
                   'h-full w-full object-cover scale-[1.10]',
                   imageClassName
                 )}
-                height='2000'
-                width='2000'
+                height={desiredWidth}
+                width={desiredHeight}
               />
             </div>
           </motion.div>
