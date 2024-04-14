@@ -75,8 +75,9 @@ export default function Project() {
       />
 
       <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
-          {projects.map((project) => (
-            <CardContainer className="inter-var" key={project.title}>
+          {projects.map((project, index) => (
+          <div key={index}>
+            <CardContainer className="inter-var" >
               <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
@@ -102,7 +103,7 @@ export default function Project() {
               </CardItem>
               <div className='flex items-center justify-start gap-2 mt-3'>
               {project.tech.map((Icon, index) => {
-                      return <Icon key={index} className='w-5 h-5 text-white' />;
+                  return <Icon key={index} className='w-5 h-5 text-white' />;
                 })}
               </div>
               <div className="flex justify-between items-center mt-20">
@@ -127,7 +128,8 @@ export default function Project() {
               </div>
             </CardBody>
             </CardContainer>
-            ))}
+          </div>
+          ))}
          </div>
       </div>
   );
