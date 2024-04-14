@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'Pictok',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
-    description: '',
+    description: 'A photo sharing app for visually impaired young adults (VIPs).',
     Link: 'https://pictok.vercel.app/',
     GithubLink: 'https://github.com/pictok/web-app',
     cover: '/pictokCover.png',
@@ -28,17 +28,17 @@ const projects = [
   {
     title: 'Discord Clone',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
-    description: '',
+    description: 'Build an exact replica of Discord with a modern and sleek design.',
     Link: 'https://github.com/J3rryfan/discord-clone',
     GithubLink: 'https://github.com/J3rryfan/discord-clone',
-    cover: '/Busy_Bites_Cover.png',
+    cover: '/discord.png',
     background: 'bg-green-500',
   },
 
   {
     title: 'BusyBites',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript, SiFigma],
-    description: '',
+    description:'Busy Bites is a food connection app designed to help students create healthy meal plans, even with busy schedules and limited cooking experience.',
     Link: 'https://busy-bites.vercel.app/',
     GithubLink: 'https://github.com/busy-bites/busy-bites',
     cover: '/Busy_Bites_Cover.png',
@@ -58,7 +58,7 @@ const projects = [
   {
     title: 'Email Guard',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-    description: '',
+    description: 'A user-friendly app designed to empower seniors with the knowledge and tools to defend themselves against email phishing threats. ',
     Link: 'https://email-guard.vercel.app/',
     GithubLink: 'https://github.com/Email-Phising-Guard/email-guard',
     cover: '/emailGuard.jpeg',
@@ -112,7 +112,7 @@ export default function Project() {
                   as={Link}
                   href={project.Link}
                   target="__blank"
-                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
                   Live Demo
                 </CardItem>
