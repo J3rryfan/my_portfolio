@@ -76,7 +76,7 @@ export default function Project() {
 
       <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
           {projects.map((project) => (
-            <CardContainer className="inter-var">
+            <CardContainer className="inter-var" key={project.title}>
               <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
