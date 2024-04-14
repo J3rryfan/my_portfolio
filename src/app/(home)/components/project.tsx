@@ -43,16 +43,16 @@ const projects = [
   {
     title: 'WishList',
     tech: [SiReact, SiTailwindcss, SiVite, SiTypescript],
-    Link: 'http://localhost:3000',
+    Link: 'https://dpcgasqvo69t1.cloudfront.net/',
     GithubLink: 'https://github.com/J3rryfan/aws-lambda-my-wishlist-app',
-    cover: '/project-profile-2.png',
+    cover: '/wishlist2.jpeg',
     background: 'bg-green-500',
   },
 
   {
     title: 'Email Guard',
     tech: [SiReact, SiTailwindcss, SiNextdotjs, SiTypescript],
-    Link: 'http://localhost:3000',
+    Link: 'https://email-guard.vercel.app/',
     GithubLink: 'https://github.com/Email-Phising-Guard/email-guard',
     cover: '/emailGuard.jpeg',
     background: 'bg-indigo-500',
